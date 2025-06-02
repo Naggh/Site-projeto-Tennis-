@@ -18,7 +18,7 @@ header img{
 }
 
 nav{
-    background-color: black;
+    background-color: rgb(240, 146, 14);
     width: 300px;
     height: 40px;
     display: flex;
@@ -31,9 +31,13 @@ nav{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+}
+
+a:hover{
+    color: black;
 }
 
 main{
@@ -91,14 +95,14 @@ button::before {
   bottom: 0;
   right: 100%;
   left: 0;
-  background: rgb(20, 20, 20);
+  background: rgb(240, 146, 14);
   opacity: 0;
   z-index: -1;
   transition: all 0.5s;
 }
 
 button:hover {
-  color: #fff;
+  color: black;
 }
 
 button:hover::before {
