@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    background-color: #333;
+}
+
+header img{
+    width: 20rem;
+    display: flex;
+    margin: 20px 0 0 20px;
+}
+
+nav{
+    background-color: black;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 20px 20px 0 0;
+    border-radius: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+main{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.ajustarsecao{
+    display: flex;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.ajustarsecao img{
+    display: flex;
+    width: 485px;
+    padding: 200px 15rem 200px 10rem;
+}
+
+.ajustetxt{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 10px 0 20px;
+}
+
+button{
+  background: #fff;
+  border: none;
+  padding: 20px 40px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 240px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.fter2{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(240, 146, 14);
+    height: max-content;
+    font-size: 10px;
+    margin-top: 30rem;
+}
+
+@media(max-width:767px){
+    
+    header{
+          flex-direction: column;
+          align-items: center;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ajustarsecao img{
+    max-width: 60%;
+    height: auto;
+    }
+    .ajustetxt{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .ajustarsecao{
+        flex-direction: column;
+        align-items: center;
+    }
+}
